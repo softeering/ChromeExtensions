@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Outlook clean-up",
+    "version": "0.1.0",
+    
+    "content_scripts": [
+        {
+            "css": [
+                
+            ],
+            "js": [
+                "third_party/jquery-3.4.1.min.js",
+                "content.js"
+            ],
+            "matches": [
+                "https://outlook.live.com/*"
+            ]
+        }
+    ]
+}
