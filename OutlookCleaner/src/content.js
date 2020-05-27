@@ -2,9 +2,10 @@ const debug = true;
 
 $(document).ready(function () {
     consoleLog("Document is ready... updating Outlook.com");
-
-	consoleLog("Removing ads div...");
-	$("div._3_hHr3kfEhbNYRFM5YJxH9").remove();
+	setTimeout(() => {
+		consoleLog("Removing ads div...");
+		$('a[href*="ad-free-outlook"]').parent().parent().parent().parent().remove();
+	}, 10000);
 });
 
 function consoleLog(text) {
