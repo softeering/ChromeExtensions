@@ -1,20 +1,12 @@
 {
-    "manifest_version": 2,
-    "name": "JournalDuNet for free",
-    "version": "0.1.0",
-    
-    "content_scripts": [
-        {
-            "css": [
-                
-            ],
-            "js": [
-                "third_party/jquery-3.4.1.min.js",
-                "content.js"
-            ],
-            "matches": [
-                "https://www.journaldunet.com/*"
-            ]
-        }
-    ]
+  "manifest_version": 3,
+  "name": "JournalDuNet for free",
+  "version": "1.1",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.journaldunet.com/*"],
+      "js": ["content.js"]
+    }
+  ]
 }
